@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="css/master.css" />
     <script src="js/getUrlParms.js"></script>
     <script src="js/user.service.js"></script>
-    <link rel="stylesheet" href="css/user-edit.component.css" />
+    <link rel="stylesheet" href="css/user-detail.component.css" />
     <script src="js/user.common.js"></script>
-    <script src="js/user-edit.component.js"></script>
+    <script src="js/user-detail.component.js"></script>
 </head>
 
 <body>
-    <h3>User Edit | <a href="user-list.component.html">Return to user list</a></h3>
+    <h3>User detail | <a href="user-list.component.html">Return to user list</a></h3>
     <table class="table table-sm">
         <tr>
             <td>Id:</td>
@@ -25,39 +25,40 @@
         </tr>
         <tr>
             <td>Username:</td>
-            <td><input id="pusername" type="text" size="30"></td>
+            <td><input id="pusername" type="text" size="30" disabled></td>
         </tr>
         <tr>
             <td>Password:</td>
-            <td><input id="ppassword" type="password" size="30"></td>
+            <td><input id="ppassword" type="password" size="30" disabled></td>
         </tr>
         <tr>
             <td>Firstname:</td>
-            <td><input id="pfirstname" type="text" size="30"></td>
+            <td><input id="pfirstname" type="text" size="30" disabled></td>
         </tr>
         <tr>
             <td>Lastname:</td>
-            <td><input id="plastname" type="text" size="30"></td>
+            <td><input id="plastname" type="text" size="30" disabled></td>
         </tr>
         <tr>
             <td>Phone:</td>
-            <td><input id="pphone" type="text" size="15"></td>
+            <td><input id="pphone" type="text" size="15" disabled></td>
         </tr>
         <tr>
             <td>Email:</td>
-            <td><input id="pemail" type="text" size="80"></td>
+            <td><input id="pemail" type="text" size="80" disabled></td>
         </tr>
         <tr>
             <td>Admin:</td>
-            <td><input id="padmin" type="checkbox"></td>
+            <td><input id="padmin" type="checkbox" disabled></td>
         </tr>
         <tr>
             <td>Reviewer:</td>
-            <td><input id="previewer" type="checkbox"></td>
+            <td><input id="previewer" type="checkbox" disabled></td>
         </tr>
         <tr>
             <td colspan="2">
-                <button id="save" class="btn btn-primary">Save</button>
+                <button id="edit" class="btn btn-warning">Edit</button> |
+                <button id="delete" class="btn btn-danger">Delete</button>
             </td>
         </tr>
     </table>

@@ -10,16 +10,17 @@ $().ready(() => {
             UserCommon.display(user);
         });
 
-    $("#save").click(() => { 
-        let usr = UserCommon.save(); 
-        change(usr)
+    $("#edit").click(() => { 
+        window.location = `user-edit.component.html?id=${user.id}`; 
+    });
+
+    $("#delete").click(() => {
+        remove(user)
             .done((res) => {
-                console.log("Change:", res);
+                console.log("Delete:", res);
                 window.location = "user-list.component.html";
-            })
-            .fail((err) => {
-                console.error(res);
             });
     });
 
 });
+

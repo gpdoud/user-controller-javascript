@@ -8,11 +8,31 @@ const get = (id) => {
     return $.getJSON(`${url}/users/${id}`);
 };
 
+const create = (user) => {
+    return $.ajax({
+                method: "POST",
+                url: `${url}/users`,
+                data: JSON.stringify(user),
+                content: "json",
+                contentType: "application/json"
+            });
+};
+
 const change = (user) => {
     return $.ajax({
                 method: "PUT",
                 url: `${url}/users/${user.id}`,
                 data: JSON.stringify(user),
+                content: "json",
+                contentType: "application/json"
+            });
+};
+
+const remove = (user) => {
+    return $.ajax({
+                method: "DELETE",
+                url: `${url}/users/${user.id}`,
+                data: null,
                 content: "json",
                 contentType: "application/json"
             });
