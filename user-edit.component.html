@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="js/getUrlParms.js"></script>
+    <script src="js/user.service.js"></script>
+    <link rel="stylesheet" href="css/user-edit.component.css" />
+    <script src="js/user-edit.component.js"></script>
+</head>
+
+<body>
+    <h3>User Edit</h3>
+    <table class="table table-sm">
+        <tr>
+            <td>Id:</td>
+            <td><input id="pid" type="text" size="8" disabled></td>
+        </tr>
+        <tr>
+            <td>Username:</td>
+            <td><input id="pusername" type="text" size="30"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input id="ppassword" type="password" size="30"></td>
+        </tr>
+        <tr>
+            <td>Firstname:</td>
+            <td><input id="pfirstname" type="text" size="30"></td>
+        </tr>
+        <tr>
+            <td>Lastname:</td>
+            <td><input id="plastname" type="text" size="30"></td>
+        </tr>
+        <tr>
+            <td>Phone:</td>
+            <td><input id="pphone" type="text" size="15"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input id="pemail" type="text" size="80"></td>
+        </tr>
+        <tr>
+            <td>Admin:</td>
+            <td><input id="padmin" type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Reviewer:</td>
+            <td><input id="previewer" type="checkbox"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button id="save" class="btn btn-primary">Save</button>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
